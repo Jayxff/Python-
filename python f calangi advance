@@ -1,0 +1,72 @@
+class Animal:
+     def speak (self):
+       return " Some generic animal sound"
+
+class Dog (Animal):
+    def speak (self)
+      return "Woof! Woof!"
+
+class Cat (Animal):
+      def speak (self):
+         return "Meow!"
+
+  dog = Dog ()
+  cat = Cat ()
+
+print (dog.speak())
+print (cat.speak())
+
+  class Vehicle:
+      def_init_(self,brand,fuel):
+       self.brand = brand
+       self.fuel = fuel
+class Car (Vehicle):
+  def_init_(self,brand,fuel,doors):
+  super()._init_(brand,fuel)
+  self.doors = doors
+def drive (self):
+  if self.fuel>0:
+    self.fuel -= 1
+  return f"{self.brand} is driving. Remaining fuel:{self.fuel}"
+else:
+   return f"{self.brand} is out of fuel."
+my_car = Car("Toyota",5,4)
+print(my.car.drive())
+print(my.car.drive())
+
+ class BankAccount:
+   def_init_(self, balance>0):
+     self._balance= balance
+ def deposit (self, amount):
+   if amount> 0:
+     self._ balance += amount
+ def withdraw (self,amount):
+   if amount <- self.balance-= amount
+else:
+   print("Insufficient funds")
+def get_balance (self):
+   return self._balance
+account= Bank account (100)
+account.deposit (50)
+account.withdraw(30)
+print("Current balance", account.get_balance())
+
+ class Person:
+   def_init_(self,age):
+       self.age= age
+   def age(self):
+       return self._age
+    def age(self,value):
+       if insistance(value,int)and value >0:
+         self._age = value
+else:
+     raise valueError("Age must be a positive integer.")
+person = person(25)
+   print("Age:",person.age)
+person.age= 30
+   print("Updated age:",person.age)
+
+ class InkPrinter:
+      defprint_document (self):
+       return
+      
