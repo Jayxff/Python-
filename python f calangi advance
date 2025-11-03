@@ -1,4 +1,4 @@
-class Animal:
+Elclass Animal:
      def speak (self):
        return " Some generic animal sound"
 
@@ -67,6 +67,67 @@ person.age= 30
    print("Updated age:",person.age)
 
  class InkPrinter:
-      defprint_document (self):
-       return
+   defprint_document (self):
+     return "Printing document using inkjet technology..."
+ class Laser Printer:
+     def print_document(self):
+      return"Printing document using laser technology..."
+ ink= InkPrinter()
+ laser= LaserPrinter()
+print(ink.print_document())
+print(laser.primt_document())
+
+ defmake_it_speak(obj):
+    obj.speak()
+ class Bird:
+    def speak(self):
+     print("Chirp! Chirp!")
+ class Robot:
+    def speak(self):
+     print("Beep boop!")
+  bird= Bird()
+  robot= Robot()
+   make_it_speak(bird)
+   make_it_speak(robot)
+
+class Shape (ABC):
+  def area (self):
+   pass
+class Circle (Shape):
+  def_init_(self, radius):
+    self.radius= radius
+  def area (self):
+    return 3.14*self.radius**2
+class Rectangle (Shape):
+  def_init_(self,width,height):
+    self.width= width
+    self.height= height
+  def area (self):
+    return self.width*self.height
+circle= Circle (5)
+rectangle= Rectangle(4,6)
+print=("Circle area:",circle.area())
+print=("Rectangle area:", rectangle.area())
+
+ class Employee(ABC):
+  def calculate_pay(self):
+      pass
+ class Hourly Employee (Employee):
+  def_init_(self,hours_worked,hourly_rate):
+  self.hours_worked=hours_worked
+  self.hourly_rate= hourly_rate
+ defcalculate_pay(self):
+    return self.hours_worked*self.hourly_rate
+ class Salaried Employee (Employee):
+   def_init_(self,monthly_salary):
+     self.monthly_salary= monthly_salary
+   def calculate_pay(self):
+     return slef.month_salary
+hourly_emp= Hourly Employee (40,150)
+salaried_emp= Salaried Employee (30000)
+print("Hourly Employee Pay:",hourly_emp.calculate_pay())
+print("Salaried Employee Pay:",salaried_emp.calculate_pay())
+
+
+
       
