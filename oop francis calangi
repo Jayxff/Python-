@@ -1,0 +1,37 @@
+ class Animal{
+     void speak(){
+        System.out.peimtln("Animal makes a sound");
+       }
+   }
+ class Dog extends Animal{
+      void speak() {
+        System.oit.println("Woof!");
+      }
+   }
+ class Cat extends Animal{
+       void speak()
+        System.out.println("Meow!");
+      }
+   }
+ public class Main{
+     public static void main (String[] args){
+       Dog d= new Dog();
+       Cat c= new Cat();
+        d.speak();
+        c.speak();
+      }
+   }
+
+  class Vehicle{
+      string brand;
+      int fuel;
+        Vehicle (String brand,int fuel){
+          this.brand= brand;
+          this.fuel= fuel;
+        }
+    }
+  class Car extends Vehicle {
+        int doors;
+    Car (String bramd,int fuel,int doors){
+           super(brand,fuel);
+           this
