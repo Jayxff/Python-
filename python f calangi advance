@@ -1,4 +1,4 @@
-Elclass Animal:
+class Animal:
      def speak (self):
        return " Some generic animal sound"
 
@@ -127,6 +127,113 @@ hourly_emp= Hourly Employee (40,150)
 salaried_emp= Salaried Employee (30000)
 print("Hourly Employee Pay:",hourly_emp.calculate_pay())
 print("Salaried Employee Pay:",salaried_emp.calculate_pay())
+
+class Node:
+   def_init_(self,data):
+     self.data= data
+     self.next= None
+class LinkedList:
+   def_init_(self):
+     self.head= None
+   def append (self,data):
+     new_node= Node(data)
+     if not self.head:
+        self.head= new_node
+        return
+     current= self.head
+     while current.next:
+        current.next= new_node
+   def prepend (self,data):
+     new_node= Node (data)
+     new_node.next= self.head
+     self.head= new_node
+   def delete (self,key):
+     current= self.head
+    if current and current.data== key:
+      self.head= current.next
+      return
+    prev= None
+      while current and current.data!= key:
+        prev= current
+      current= current.next
+      if current is None:
+        print(f"{key} not found!")
+        return
+      prev.next= current.next
+   def search (self,key):
+      current= self.head
+      while current:
+         if current.data== key:
+           return True
+         current= current.next
+           return False
+    def count (self):
+       count= 0
+       current= self.head
+       while current:
+           count+=1
+           current= current.next
+        return count
+    def reverse (self):
+       prev= None
+       current= self.head
+       while current:
+         next= current.next
+       current.next= prev
+         prev= current
+         current= next
+       self.head= prev
+    def display (self):
+        current= self.head
+        while current:
+          print(current.data end="-> ")
+          current= current.next
+          print ("None")
+
+class Node:
+  def_init_(self,data):
+     self.data= data
+     self.next= None
+class Stack
+  def_init_(self):
+     self.top= None
+     self.count= 0
+  def push(self,data):
+     new_node= Node(data)
+     new_node.next= self.top
+     self.top= new_node
+     self.count += 1
+     print(f"{data} onto the stack.")
+  def pop(self):
+     if self.top is None:
+       print("Stack Underflow! Cannot pop from empty stack.")
+       return None
+     popped_data= self.top.data
+     self.top= self.top.next
+     self.count-= 1
+     print (f"Popped{popped_data} from the stack.")
+     return popped_data
+  def peek(self):
+     if slef.top is None:
+       print ("Stack is empty.")
+       return None
+     primt(f"Top element is{self.top.data}")
+       return self.top.data
+  def is_empty(self):
+       return self.top is None
+  def size(self):
+       return self.count
+  def display(self):
+       if self.top is None
+         print ("Stack is empty.")
+         return
+       current= self.top
+       print(" Stack elements(top to bottom):",end="")
+       while current:
+            print ( current.data,end="->")
+            current= current.next
+       print("None")
+
 
 
 
