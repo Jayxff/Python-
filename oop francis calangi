@@ -197,7 +197,7 @@ circle(double radius){
      this.monthlySalary= monthlySalary;
     }
      double calculatePay(){
-        rwturn monthlySalary;
+        return monthlySalary;
     }
  }
      public class Main8{
