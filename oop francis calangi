@@ -145,5 +145,69 @@
     }
  }
 
+abstract class Shape{
+   abstract double area();
+ }
+class Circle extends Shape{
+   double radius;
+circle(double radius){
+    this.radius= radius;
+ }
+ double area() {
+    return Math.PI*radius*radius;
+ }
+}
+ class Rectangle extends Shape{
+    double width,height;
+ Rectangle (double width,double height){
+      this.width= width;
+      this.height= height;
+ }
+    double area(){
+       return width*height;
+ }
+}
+  public class Main7{
+      public static void main(String[]args){
+        Shape c= new Circle(5);
+        Shape r= new Rectangle(4,6);
+        System.out.println("Circle area:"+c.area());
+        System.out.println("Rectangle area:"+r.area());
+  }
+}
+
+  abstract class Employee
+      abstract double calculatePay();
+  }
+  class HourlyEmployee extends Employee {
+      double hoursWorked,ratePerHour;
+  Hourly Employee (double hoursWorked,double ratePerHour){
+       this.hourWorked= hoursWorked;
+       this.reatePerHour= ratePerHour;
+  }
+       double calculatePay(){
+       return hoursWorked*ratePerHour;
+     }
+  } 
+
+  class Salaried Employee extends Employee {
+       double monthlySalary;
+     
+     Salaried Employee(doublecalculatePay);
+     this.monthlySalary= monthlySalary;
+    }
+     double calculatePay(){
+        rwturn monthlySalary;
+    }
+ }
+     public class Main8{
+      public static void main(String[]args){
+      Employee e1= new HourlyEmployee(40,20);
+      Employee e2= mew Salaried Employee (3000);
+      System.out.println("Hourly Employee Pay:"+ e1 calculatePay());
+      System.out.println("Salaried Employee Pay:"+ e2 calculatePay());
+  }
+}
+
 
 
