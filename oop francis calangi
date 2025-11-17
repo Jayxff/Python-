@@ -1,4 +1,116 @@
- class Animal{
+// Abstract class representing a Motorcycle
+abstract class Motorcycle {
+    String brand;
+    String model;
+
+    Motorcycle(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
+    // Abstract methods (what a motorcycle can do)
+    abstract void startEngine();
+    abstract void stopEngine();
+    abstract void accelerate();
+
+    // Concrete method (common to all motorcycles)
+    void showDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+    }
+}
+
+// Subclass for Kawasaki Motorcycle
+class Kawasaki extends Motorcycle {
+
+    Kawasaki(String model) {
+        super("Kawasaki", model);
+    }
+
+    @Override
+    void startEngine() {
+        System.out.println("Kawasaki engine started.");
+    }
+
+    @Override
+    void stopEngine() {
+        System.out.println("Kawasaki engine stopped.");
+    }
+
+    @Override
+    void accelerate() {
+        System.out.println("Kawasaki is accelerating!");
+    }
+}
+
+// Main class to test
+public class Main {
+    public static void main(String[] args) {
+        Kawasaki ninja = new Kawasaki("Ninja ZX-10R");
+
+        ninja.showDetails();
+        ninja.startEngine();
+        ninja.accelerate();
+        ninja.stopEngine();
+    }
+}
+// Abstract class representing a Motorcycle
+abstract class Motorcycle {
+    String brand;
+    String model;
+
+    Motorcycle(String brand, String model) {
+        this.brand = brand;
+        this.model = model;
+    }
+
+    // Abstract methods (what a motorcycle can do)
+    abstract void startEngine();
+    abstract void stopEngine();
+    abstract void accelerate();
+
+    // Concrete method (common to all motorcycles)
+    void showDetails() {
+        System.out.println("Brand: " + brand);
+        System.out.println("Model: " + model);
+    }
+}
+
+// Subclass for Kawasaki Motorcycle
+class Kawasaki extends Motorcycle {
+
+    Kawasaki(String model) {
+        super("Kawasaki", model);
+    }
+
+    @Override
+    void startEngine() {
+        System.out.println("Kawasaki engine started.");
+    }
+
+    @Override
+    void stopEngine() {
+        System.out.println("Kawasaki engine stopped.");
+    }
+
+    @Override
+    void accelerate() {
+        System.out.println("Kawasaki is accelerating!");
+    }
+}
+
+// Main class to test
+public class Main {
+    public static void main(String[] args) {
+        Kawasaki ninja = new Kawasaki("Ninja ZX-10R");
+
+        ninja.showDetails();
+        ninja.startEngine();
+        ninja.accelerate();
+        ninja.stopEngine();
+    }
+}
+class Animal{
      void speak(){
         System.out.peimtln("Animal makes a sound");
        }
@@ -298,50 +410,8 @@ public class Main {
     }
 }
 
-// Abstract class
-abstract class Car {
-    String brand = "Toyota";
 
-    abstract void startEngine();
-    abstract void stopEngine();
 
-    void showBrand() {
-        System.out.println("Car Brand: " + brand);
-    }
-}
-
-// Subclass Toyota Vios
-class ToyotaVios extends Car {
-
-    @Override
-    void startEngine() {
-        System.out.println("Toyota Vios engine started using push button.");
-    }
-
-    @Override
-    void stopEngine() {
-        System.out.println("Toyota Vios engine stopped.");
-    }
-
-    void showModel() {
-        System.out.println("Model: Toyota Vios 2024");
-    }
-}
-
-// Main class
-public class Main {
-    public static void main(String[] args) {
-
-        Car myCar = new ToyotaVios();   // Abstraction + Polymorphism
-
-        myCar.showBrand();
-        myCar.startEngine();
-        myCar.stopEngine();
-
-        // To access showModel(), cast to ToyotaVios
-        ((ToyotaVios) myCar).showModel();
-    }
-}
 
 
 
