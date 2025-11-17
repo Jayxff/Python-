@@ -309,6 +309,46 @@ login_button.pack()
 
 parent.mainloop()
 
+# Basic Mathematical Operations in Python
+
+
+num1 = float(input("Enter the first number: "))
+num2 = float(input("Enter the second number: "))
+
+
+add = num1 + num2
+print(f"{num1} + {num2} = {add}")
+
+
+sub = num1 - num2
+print(f"{num1} - {num2} = {sub}")
+
+
+mul = num1 * num2
+print(f"{num1} * {num2} = {mul}")
+
+
+if num2 != 0:
+    div = num1 / num2
+    print(f"{num1} / {num2} = {div}")
+else:
+    print("Division by zero is not allowed.")
+
+
+if num2 != 0:
+    floor_div = num1 // num2
+    print(f"{num1} // {num2} = {floor_div}")
+
+
+if num2 != 0:
+    mod = num1 % num2
+    print(f"{num1} % {num2} = {mod}")
+
+
+exp = num1 ** num2
+print(f"{num1} ** {num2} = {exp}")
+
+
 
 
 
