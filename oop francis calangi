@@ -253,12 +253,6 @@ class Vehicle {
         System.out.println("Brand: " + brand + ", Year: " + year);
     }
 
-    // New overloaded method with model, color, price
-    void info(String brand, String model, String color, double price) {
-        System.out.println("Brand: " + brand + ", Model: " + model +
-                ", Color: " + color + ", Price: ₱" + price);
-    }
-
     // Method to be overridden
     void speed() {
         System.out.println("Vehicle has an average speed.");
@@ -277,7 +271,7 @@ class Car extends Vehicle {
 class Motorcycle extends Vehicle {
     @Override
     void speed() {
-        System.out.println("Motorcycle runs at 120 km/h.");
+        System.out.println("Motorcycle runs at 100 km/h.");
     }
 }
 
@@ -298,17 +292,12 @@ public class Main {
         // Using Motorcycle object
         v = new Motorcycle();
         v.info();
-        v.info("Honda");
-        v.info("Honda", 2020);
-
-        // ➕ Added 3 brands with model, color, and price
-        v.info("Yamaha", "MT-15", "Blue", 165000);
-        v.info("Kawasaki", "Ninja 400", "Green", 340000);
-        v.info("Suzuki", "Gixxer 155", "Black", 112000);
-
+        v.info("Kawasaki");
+        v.info("Kawasaki", 2022);
         v.speed();
     }
 }
+
 
 
 
