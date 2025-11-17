@@ -436,6 +436,36 @@ public class InputOutputActivity {
     }
 }
 
+public class LogicalOperatorsMore {
+    public static void main(String[] args) {
+        boolean p = true;
+        boolean q = false;
+
+        // AND operator (&&)
+        System.out.println("p && q = " + (p && q)); // false
+        System.out.println("p && p = " + (p && p)); // true
+        System.out.println("q && q = " + (q && q)); // false
+
+        // OR operator (||)
+        System.out.println("p || q = " + (p || q)); // true
+        System.out.println("p || p = " + (p || p)); // true
+        System.out.println("q || q = " + (q || q)); // false
+
+        // NOT operator (!)
+        System.out.println("!p = " + (!p)); // false
+        System.out.println("!q = " + (!q)); // true
+
+        // XOR operator (^)
+        System.out.println("p ^ q = " + (p ^ q)); // true
+        System.out.println("p ^ p = " + (p ^ p)); // false
+        System.out.println("q ^ q = " + (q ^ q)); // false
+
+        // Combining operators
+        System.out.println("(p && q) || (!p) = " + ((p && q) || (!p))); // false
+        System.out.println("(p || q) && (!q) = " + ((p || q) && (!q))); // true
+    }
+}
+
 
 
 
