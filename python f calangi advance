@@ -402,6 +402,12 @@ elif grade >= 75:
 else:
     print("Needs Improvement")
 
+student = {"name": "Francis", "age": 23, "course": "Computer"}
+
+for key, value in student.items():
+    print(key, ":", value)
+
+
 
 
 
