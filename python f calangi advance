@@ -407,6 +407,11 @@ student = {"name": "Francis", "age": 23, "course": "Computer"}
 for key, value in student.items():
     print(key, ":", value)
 
+numbers = [1, 2, 3, 4]
+doubled = list(map(lambda x: x * 2, numbers))
+print(doubled)  
+
+
 
 
 
