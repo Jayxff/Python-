@@ -393,6 +393,16 @@ if temp > 35:
 else:
     print("Temperature is normal.")
 
+grade = 85
+
+if grade >= 90:
+    print("Excellent")
+elif grade >= 75:
+    print("Good")
+else:
+    print("Needs Improvement")
+
+
 
 
 
