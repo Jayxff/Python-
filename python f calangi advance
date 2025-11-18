@@ -381,6 +381,12 @@ print("Absolute value of -15:", abs(-15))
 print("Factorial of 5:", math.factorial(5))
 print("Remainder of 17 divided by 3:", math.fmod(17, 3))
 
+name = "Francis"
+
+if name == "Francis":
+    print("Hello, Francis!")
+
+
 
 
 
