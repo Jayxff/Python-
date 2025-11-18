@@ -348,6 +348,23 @@ if num2 != 0:
 exp = num1 ** num2
 print(f"{num1} ** {num2} = {exp}")
 
+# Basic input operation 
+
+name = input("Enter your name: ")
+age = input("Enter your age: ")
+number1 = int(input("Enter first number: "))
+number2 = int(input("Enter second number: "))
+
+# Processing
+sum_result = number1 + number2
+
+# Output
+print("\n--- OUTPUT ---")
+print("Hello,", name)
+print("Your age is:", age)
+print("The sum of the two numbers is:", sum_result)
+
+
 
 
 
