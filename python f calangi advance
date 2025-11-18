@@ -386,6 +386,14 @@ name = "Francis"
 if name == "Francis":
     print("Hello, Francis!")
 
+temp = 30
+
+if temp > 35:
+    print("It's very hot.")
+else:
+    print("Temperature is normal.")
+
+
 
 
 
